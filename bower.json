@@ -25,6 +25,6 @@
     "node_modules"
   ],
   "dependencies": {
-    "ionic": "git@github.com:amplexdenmark/ionic-v1.git"
+    "ionic": "git@github.com:amplexdenmark/ionic-v1.git#master"
   }
 }
