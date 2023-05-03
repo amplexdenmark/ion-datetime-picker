@@ -205,6 +205,9 @@ angular.module("ion-datetime-picker", ["ionic"])
 
           var currentDate = new Date($scope.year, $scope.month, day);
           var constraints = $scope.onlyValid;
+          if (constraints instanceof Function) {
+            return constraints(currentDate, computeNextValidDate ? setNextValidDate : null );
+          }
           if (!(constraints instanceof Array)) {
             constraints = [constraints];
           }
